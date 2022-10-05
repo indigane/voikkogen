@@ -225,8 +225,8 @@ def __read_header(file):
 		if len(strippedLine) == 0: continue
 		valStart = strippedLine.find(':')
 		if valStart < 1:
-			print 'Malformed input file: the problematic line was'
-			print line
+			print('Malformed input file: the problematic line was')
+			print(line)
 			return None
 		return (strippedLine[:valStart].strip(), strippedLine[valStart+1:].strip())
 
@@ -280,7 +280,7 @@ def __read_inflection_type(file):
 	header_tuple = __read_header(file)
 	if header_tuple == None: return None
 	if header_tuple[0] != u'class' or len(header_tuple[1]) == 0:
-		print 'Class definition expected.'
+		print('Class definition expected.')
 		return None
 
 	t = InflectionType()
@@ -288,7 +288,7 @@ def __read_inflection_type(file):
 	while True:
 		header_tuple = __read_header(file)
 		if header_tuple == None:
-			print 'Unexpected end of file.'
+			print('Unexpected end of file.')
 			return None
 		if header_tuple[0] == u'sm-class': t.joukahainenClasses = header_tuple[1].split(' ')
 		if header_tuple[0] == u'rmsfx': t.rmsfx = header_tuple[1]
@@ -351,7 +351,7 @@ def __regex_to_hunspell(exp, repl):
 			affix = repl
 			rulelist.append((strip_str, affix, condition))
 		return rulelist
-	print 'Unsupported regular expression: exp=\'' + exp + '\', repl=\'' + repl + '\''
+	print('Unsupported regular expression: exp=\'' + exp + '\', repl=\'' + repl + '\'')
 	return []
 
 
