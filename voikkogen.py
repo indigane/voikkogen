@@ -15,7 +15,7 @@ word_classes_verb = voikkoinfl.readInflectionTypes('corevoikko/data/verb.aff')
 
 try:
   word_count = int(sys.argv[1])
-except IndexError, ValueError:
+except (IndexError, ValueError):
   word_count = 3
 
 
@@ -105,11 +105,11 @@ def get_random_inflected_word():
 generated_str = ''
 try:
   target_count = int(sys.argv[1])
-except IndexError, ValueError:
+except (IndexError, ValueError):
   target_count = 3
 
 for i in range(target_count):
   generated_str += get_random_inflected_word().capitalize()
 
 
-print generated_str
+print(generated_str)
