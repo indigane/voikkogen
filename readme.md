@@ -1,14 +1,18 @@
-# Voikkogen
+### [Taivutin](https://github.com/indigane/taivutin) on uusi Voikkogenin korvaaja!
+
+-----
+
+#### Voikkogen
 
 Voikkogen on salasanageneraattori, joka arpoo ja taivuttaa sanoja nykysuomen sanalistasta.
 
-## Käyttö
+#### Käyttö
 
 `python voikkogen.py [sanojen määrä]`
 
-## Lisenssit
+#### Lisenssit
 
-### Kotus nykysuomen sanalista
+#### Kotus nykysuomen sanalista
 
 Sanalista on karsittu versio Kotuksen sanalistasta.
 
@@ -21,7 +25,7 @@ GNU LGPL lisenssiteksti http://www.gnu.org/licenses/lgpl.html \
 EUPL v.1.1 lisenssiteksti http://joinup.ec.europa.eu/software/page/eupl/licence-eupl \
 CC-BY 3.0 lisenssiteksti http://creativecommons.org/licenses/by/3.0/deed.fi
 
-### Libvoikko
+#### Libvoikko
 
 Parts of libvoikko are distributed under a license that allows using\
 the code under either the Mozilla Public License Version 1.1 (MPL 1.1),\
